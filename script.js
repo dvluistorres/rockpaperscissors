@@ -50,18 +50,16 @@ function game(){
         l++;
     }
     i++;
-    if (i===4 && w===l) {
+    if (i===5 && w===l) {
         --i;
     } 
     
     if (i===5){
-        setTimeout(() => {
             if(w>l){
                 result.textContent+=" and You win the game";
             } else {
                 result.textContent+=" and You lose the game";
             }
-        },"100");
         w = 0;
         l = 0;
         i = 0;
